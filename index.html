@@ -28,9 +28,11 @@
   <!--//stylesheets-->
   <link href="//fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+  
 </head>
 
 <body>
+ 
   <!-- main -->
   <div class="banner-two-img" id="home">
     <div class=" banner-left-side">
@@ -74,7 +76,7 @@
       <!-- banner -->
       <div class="banner-right-txt text-center">
         <h5 class="mb-2">Hello, There</h5>
-        <h4>I'M Farshad Mofidi</h4>
+        <h4> <div id="like_button_container"></div>  I'M Farshad Mofidi</h4>
         <div class="two-demo-button mt-3">
           <p>Web Developer</p>
         </div>
@@ -420,7 +422,12 @@
       </footer>
     </div>
   </div>
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
+<!-- Load our React component. -->
+<script src="js/blog.js"></script>
 </body>
 
 </html>
