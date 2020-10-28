@@ -43,13 +43,37 @@ class BlogComponent extends React.Component {
             );
         } else {
             return React.createElement(
-                "ul",
+                "div",
                 null,
                 posts.map(item => React.createElement(
-                    "li",
-                    { key: item.Title },
-                    item.Title,
-                    " ",
+                    "div",
+                    { "class": "col-lg-6 col-md-6 col-sm-6 blog-two-two mt-3" },
+                    React.createElement(
+                        "div",
+                        { "class": "blog-date-time mb-2" },
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#contact" },
+                                    "July 2020/7"
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "h4",
+                        { "class": "mb-3" },
+                        React.createElement(
+                            "a",
+                            { href: "#contact" },
+                            item.Title
+                        )
+                    ),
                     item.PostBody
                 ))
             );
@@ -57,5 +81,5 @@ class BlogComponent extends React.Component {
     }
 }
 
-const domContainer = document.querySelector('#like_button_container');
+const domContainer = document.querySelector('#all-posts');
 ReactDOM.render(React.createElement(BlogComponent), domContainer);
