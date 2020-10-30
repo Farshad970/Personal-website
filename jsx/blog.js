@@ -44,7 +44,7 @@ class BlogComponent extends React.Component {
                         <div class="blog-date-time mb-2">
                             <ul>
                             <li>
-                                <a href="#contact">July 2020/7</a>
+                                <a href="#contact">{item.PostDate}</a>
                             </li>
                             </ul>
                         </div>
