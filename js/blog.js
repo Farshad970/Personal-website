@@ -60,7 +60,7 @@ class BlogComponent extends React.Component {
                                 React.createElement(
                                     "a",
                                     { href: "#contact" },
-                                    "July 2020/7"
+                                    item.PostDate
                                 )
                             )
                         )
